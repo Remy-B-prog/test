@@ -1,0 +1,31 @@
+$widths: (
+  '10': 10%,
+  '20': 20%,
+  '25': 25%,
+  '33': 33.33%,
+  '50': 50%,
+  '66': 66.66%,
+  '75': 75%,
+  '90': 90%,
+  '100': 100%
+);
+
+@each $width_name, $width in $widths {
+  .w-#{$width_name} { width: $width; }
+  .w-max-#{$width_name} { max-width: $width; }
+  .w-min-#{$width_name} { min-width: $width; }
+}
+
+@each $breakpoint_name, $breakpoint_size in $breakpoints {
+
+  @media screen and (min-width: $breakpoint_size) {
+
+    @each $width_name, $width in $widths {
+      .w-#{$breakpoint_name}-#{$width_name} { width: $width; }
+      .w-max-#{$breakpoint_name}-#{$width_name} { max-width: $width; }
+      .w-min-#{$breakpoint_name}-#{$width_name} { min-width: $width; }
+    }
+
+  }
+
+}

@@ -1,0 +1,186 @@
+/* ============================================================= DOCUMENTATION */
+/* This files contains the CSS styling for global elements, such as :
+*
+*      - Global settings
+*      - Layout rules (for sections/spaces/alignment/...)
+*      - Titles & text presets
+*      - Flexbox presets
+*      - Lists styling
+*      - Colors presets
+*      - Buttons and anchors presets
+*      - Lazy loading animation
+*/
+/* ============================================================= GLOBAL SETTINGS */
+body {
+  font-family: var(--font);
+  color: var(--color-secondary);
+}
+/* ============================================================= LAYOUT */
+.vpd {
+  padding-top: var(--vpd);
+  padding-bottom: var(--vpd);
+}
+.hpd {
+  padding-left: var(--hpd);
+  padding-right: var(--hpd);
+}
+.px-content {
+  padding-left: var(--px-content);
+  padding-right: var(--px-content);
+}
+.full {
+  width: 100%;
+}
+.half {
+  width: 50%;
+}
+.just-bg {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.just-img {
+  object-fit: cover;
+  object-position: center;
+}
+.shadow {
+  box-shadow: 10px 10px 15px -10px rgba(51, 51, 51, 0.1);
+}
+/* ============================================================= LISTS */
+ul.bullet {
+  list-style-type: disc;
+  padding-left: 30px;
+}
+/* ============================================================= COLORS */
+.white {
+  color: #fff;
+}
+.to-white:hover {
+  color: #fff;
+}
+.primary {
+  color: var(--color-primary);
+  position: relative;
+}
+.primary:hover {
+  color: var(--color-primary);
+}
+.primary {
+  color: var(--color-primary);
+}
+.secondary {
+  color: var(--color-secondary);
+}
+.ternary {
+  color: var(--color-ternary);
+}
+.quaternary {
+  color: var(--color-quaternary);
+}
+.bg-white {
+  background: white;
+}
+.bg-primary {
+  background: var(--color-primary);
+}
+.bg-secondary {
+  background: var(--color-secondary);
+}
+.bg-ternary {
+  background: var(--color-ternary);
+}
+.bg-quaternary {
+  background: var(--color-quaternary);
+}
+/* ============================================================= BUTTONS AND ANCHORS */
+button, a {
+  cursor: pointer;
+  display: inline-block;
+  transition: 0.4s;
+}
+.btn-class {
+  padding: 10px 15px;
+  font-weight: bold;
+  font-size: 14px;
+  text-transform: uppercase;
+  border: 0;
+}
+.btn-class {
+  color: var(--color-body);
+  background: #333;
+}
+.btn-class:hover {
+  background: #666;
+}
+/* ============================================================= FORM */
+input, textarea {
+  padding: 10px 0;
+  background: none;
+  border: none;
+  border-bottom: 1px solid var(--color-primary);
+  margin-bottom: 30px;
+  width: 100%;
+  color: var(--color-lightgrey);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 14px;
+}
+input::placeholder, textarea::placeholder {
+  color: var(--color-lightgrey);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 14px;
+}
+[type="checkbox"], [type="radio"] {
+  width: fit-content;
+  margin-bottom: 0;
+}
+[type="submit"] {
+  text-align: center;
+}
+.wpcf7-list-item {
+  display: inline-block;
+  margin: 0;
+}
+.private-policy span {
+  color: var(--color-body);
+  font-weight: normal;
+}
+.required-fields, .required {
+  color: var(--color-primary) !important;
+  font-weight: normal !important;
+}
+label {
+  font-size: 1rem;
+  font-family: var(--font);
+  color: var(--color-primary);
+  line-height: 1.19rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+fieldset {
+  border: 1px solid var(--color-primary);
+  margin: 30px 0;
+}
+legend {
+  color: var(--color-primary);
+  font-weight: 700;
+  padding: 0 5px;
+}
+/* ============================================================= LAZY LOADING */
+img[data-src] {
+  min-height: 200px;
+  background: linear-gradient(180deg, #fff, #c0c0c0, #fff) no-repeat;
+  background-size: 500% 500%;
+  animation: loading 1s infinite linear;
+  font: 300 12px/1.5 var(--font);
+}
+@keyframes loading {
+  0% {
+    background-position: 50% -50%;
+  }
+  100% {
+    background-position: 50% 150%;
+  }
+}

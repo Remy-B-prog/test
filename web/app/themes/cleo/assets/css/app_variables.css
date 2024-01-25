@@ -1,0 +1,46 @@
+/*VARIABLES SCSS*/
+/*TAILLES DE BREAKPOINTS RESPONSIVE*/
+/*TABLEAU DES TAILLES DE BREAKPOINTS RESPONSIVE*/
+/*MARGINS DE BASE*/
+/*PADDINGS DE BASE*/
+/*TABLEAU DES TAILLES DE MARGES VERTICALES*/
+/*TABLEAU DES TAILLES DE MARGES HORIZONTALES*/
+/*TABLEAU DES TAILLES DE PADDINGS VERTICALES*/
+/*TABLEAU DES TAILLES DE PADDINGS HORIZONTALES*/
+:root {
+  border-color: var(--color-primary);
+  border: none;
+  --font: 'Roboto';
+  --h-font: 'Roboto';
+  --vpd: 30px;
+  --hpd: 15px;
+  --px-content: 15px;
+  --navtop: 70px;
+  --navtop-scroll: 40px;
+  --footer: 50px;
+  --color-primary: #14332E;
+  --color-secondary: #AA0063;
+  --color-ternary: #9DA193;
+  --color-quaternary: #CFA247;
+  --color-body: #393939;
+  --color-lightgrey:rgb(161, 161, 161);
+}
+@media screen and (min-width: 992px) {
+  :root {
+    --vpd: 50px;
+    --hpd: 25px;
+    --px-content: 35px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  :root {
+    --hpd: 7.5vw;
+    --px-content: 70px;
+  }
+}
+@media screen and (min-width: 1980px) {
+  :root {
+    --hpd: 23vw;
+    --px-content: 7.5vw;
+  }
+}

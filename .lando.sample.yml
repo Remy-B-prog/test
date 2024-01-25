@@ -1,0 +1,13 @@
+name: nom_du_conteneur
+recipe: wordpress
+config:
+  webroot: web
+services:
+  appserver:
+    type: php:8.2 
+  database:
+    creds:
+      user: user_name
+      password: password
+      database: database_name
+      host: database

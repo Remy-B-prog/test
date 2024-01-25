@@ -1,0 +1,8 @@
+<svg id="Composant_12_1" data-name="Composant 12 – 1" xmlns="http://www.w3.org/2000/svg" width="27" height="27" viewBox="0 0 27 27">
+  <rect id="Rectangle_44" data-name="Rectangle 44" width="27" height="27" fill="none"/>
+  <g id="shopping-cart" transform="translate(5 5)">
+    <path id="Tracé_3" data-name="Tracé 3" d="M16.675,2.993A2.2,2.2,0,0,0,14.984,2.2H3.114l-.031-.258A2.2,2.2,0,0,0,.9,0H.734a.734.734,0,0,0,0,1.468H.9a.734.734,0,0,1,.729.648l1.01,8.59a3.671,3.671,0,0,0,3.646,3.243h7.667a.734.734,0,1,0,0-1.468H6.282a2.2,2.2,0,0,1-2.07-1.468h8.751a3.671,3.671,0,0,0,3.613-3.02l.576-3.2a2.2,2.2,0,0,0-.477-1.8Zm-.964,1.542-.577,3.2a2.2,2.2,0,0,1-2.171,1.812H3.978L3.288,3.671h11.7a.734.734,0,0,1,.727.865Z" fill="#fff"/>
+    <circle id="Ellipse_7" data-name="Ellipse 7" cx="1.5" cy="1.5" r="1.5" transform="translate(3.888 14.81)" fill="#fff"/>
+    <circle id="Ellipse_8" data-name="Ellipse 8" cx="1.5" cy="1.5" r="1.5" transform="translate(10.888 14.81)" fill="#fff"/>
+  </g>
+</svg>

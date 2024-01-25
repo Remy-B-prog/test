@@ -1,0 +1,90 @@
+footer {
+
+	.footer-menus {
+	
+		.footer-address {
+			border-bottom: 1px solid white;
+			h4,
+			p,
+			span {
+				color: white;
+				text-align: center;
+			}
+			p {
+				font-size: 14px;
+			}
+			.cta-style {
+				display: flex;
+				justify-content: center;
+				a {
+					color: white;
+					z-index: 1;
+					&::before {
+					}
+				}
+			}
+			.network-links {
+				a {
+					margin: 0 7.5px;
+				}
+			}
+		}
+		
+
+		.logo-footer {
+			max-width: 200px;
+			margin: 0 auto;
+		}
+	}
+	
+}
+
+@media screen and (min-width: $site_breakpoint_md) {
+	footer {
+		margin-bottom: 0px;
+		
+		.footer-menus {
+			.site-links {
+				border: 0;
+			}
+			.footer-address {
+				border: 0;
+				h4,
+				p,
+				span {
+					text-align: left;
+				}
+				h4{
+					padding-top: 10px;
+					margin-bottom: 7.5px;
+				}
+				p {
+				}
+				.cta-style {
+					justify-content: flex-start;
+					padding: 0;
+					a {
+						&::before {
+						}
+					}
+				}
+				
+			}
+			
+
+			.logo-footer {
+				order: -1;
+				margin: unset;
+
+				.imgWrap {
+					max-width: 200px;
+					img {
+						object-fit: contain;
+						object-position: top;
+					}
+				}
+			}
+		}
+		
+	}
+}

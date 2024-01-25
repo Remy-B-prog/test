@@ -1,0 +1,39 @@
+.wp-block-table {
+    table {
+        th, td{
+            padding: 15px;
+        }
+        thead {
+            tr {
+                th {
+                }
+            }
+        }
+        tbody {
+            tr {
+                &:first-child{
+                    font-size: 1rem;
+                    margin: 0 0 calc(var(--vpd) / 2) 0;
+                    font-family: var(--font);
+                    color: var(--color-primary);
+                    line-height: 1.19rem;
+                    letter-spacing: 1px;
+                    text-transform: uppercase;
+                    font-weight: 400;
+                }
+                &:nth-child(even){
+                    background: var(--color-secondary);
+                }
+                td {
+
+                }
+            }
+        }
+        tfoot {
+            tr {
+                th {
+                }
+            }
+        }
+    }
+}

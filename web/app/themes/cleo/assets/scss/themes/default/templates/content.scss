@@ -1,0 +1,25 @@
+#main {
+  // min-height: calc(100vh - var(--navtop) - var(--footer));
+  min-height: calc(100vh - var(--navtop) - var(--footer));
+  padding-top: calc(var(--navtop) * 1.5);
+}
+
+.container {
+  padding: calc(var(--vpd)*2) 13% calc(var(--vpd)*2) calc(var(--hpd)*2);
+
+}
+
+@media screen and (min-width: $site_breakpoint_sm) {
+
+}
+
+@media screen and (min-width: $site_breakpoint_md) {
+
+  .container {
+    padding: calc(var(--vpd)*2) 10%;
+  }
+}
+
+@media screen and (min-width: $site_breakpoint_lg) {}
+
+@media screen and (min-width: $site_breakpoint_xl) {}
